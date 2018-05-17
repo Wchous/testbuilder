@@ -43,7 +43,7 @@ var detectNetwork = function(cardNumber) {
   	return "MasterCard";
   }
   if ((fourthPrefix === "6011" || (parseInt(thirdPrefix) >= 644 && parseInt(thirdPrefix) <= 649) ||
-   secondPrefix === "65") && (length === 16 || length === 19)) {
+   firstPrefix === "65") && (length === 16 || length === 19)) {
   	return "Discover";
   }
   if ((fourthPrefix === "5018" || fourthPrefix === "5020" || fourthPrefix === "5038" || fourthPrefix === "6304") &&
